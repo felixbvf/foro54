@@ -1,0 +1,14 @@
+language: php
+
+php:
+    -7.0
+
+before_script:
+  - cp .env.travis .env
+  - psql -c 'create database foro_test;' -U postgres
+  - composer self-update
+  - composer install --no-interaction
+  - php artisan migrate --force
+
+script:
+    vendor/bin/phpunit
