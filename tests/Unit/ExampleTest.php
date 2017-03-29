@@ -3,21 +3,18 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
-use Foro\User;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class ExampleTest extends TestCase
+//use Illuminate\Foundation\Testing\DatabaseMigrations;
+//use Illuminate\Foundation\Testing\DatabaseTransactions;
+
+class ExampleTest extends FeatureTestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testBasicTest()
+    //use DatabaseTransactions;
+
+    public function test_basic_example()
     {
         $this->assertTrue(true);
-        $user = factory(User::class)->create([
+        $user = factory(\Foro\User::class)->create([
             'name' => 'Felix Balderrama',
         ]);
 
