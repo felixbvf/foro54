@@ -52,7 +52,7 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT_PG', '5433'),
+            'port' => env('DB_PORT_PG', '5432'),
             'database' => env('DB_DATABASE_PG', 'foro_test'),
             'username' => env('PSQL_USER', env('DB_USERNAME_PG', 'postgres')),
             'password' => env('PSQL_PASSWORD', env('DB_PASSWORD_PG', '123')),
