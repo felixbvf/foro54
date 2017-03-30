@@ -27,9 +27,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/",
-            "Tests\\": "tests/TestCase.php",
-            "Tests\\": "tests/FeatureTestCase.php"
+            "Tests\\": "tests/"            
         }
     },
     "scripts": {
